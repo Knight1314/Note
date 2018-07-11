@@ -1,0 +1,50 @@
+package leetcode;
+
+public class LargestNumber179 {
+	public String largestNumber(int[] nums) {
+		for (int i = 0; i < nums.length - 1; i++) {
+			for (int j = i + 1; j < nums.length; j++) {
+				if (compare(nums[i], nums[j]) <= 0) {
+					int tmp = nums[i];
+					nums[i] = nums[j];
+					nums[j] = tmp;
+				}
+			}
+		}
+		StringBuffer sb = new StringBuffer();
+		for (int i = 0; i < nums.length; i++) {
+			sb.append(nums[i]);
+		}
+		return sb.toString();
+	}
+
+	public int compare(int num1, int num2) {
+		if (num1 == num2) {
+			return 0;
+		}
+		int i = 1;
+		int num1Len = 0;
+		int num2Len = 0;
+		while (num1 / (int) Math.pow(10, i) != 0) {
+			i++;
+		}
+		num1Len = i;
+		i = 1;
+		while (num2 / (int) Math.pow(10, i) != 0) {
+			i++;
+		}
+		num2Len = i;
+//		System.out.println("1:" + num1Len + " 2:" + num2Len);
+		if ((num1 + num2 * Math.pow(10, num1Len - 1)) < (num2 + num1 * Math.pow(10, num2Len - 1))) {
+			return -1;
+		} else {
+			return 1;
+		}
+	}
+
+	public static void main(String[] args) {
+		int[] nums = { 10, 2 };
+		System.out.println(new LargestNumber179().largestNumber(nums));
+		System.out.println(new LargestNumber179().compare(10, 2));
+	}
+}

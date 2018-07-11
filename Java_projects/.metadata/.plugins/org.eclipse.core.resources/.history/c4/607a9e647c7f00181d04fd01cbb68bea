@@ -1,0 +1,12 @@
+package leetcode;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class ValidAnagram242 {
+	public boolean isAnagram(String s, String t) {
+		Map<Character,Integer> map = new HashMap<>();
+		
+		return false;
+	}
+}
