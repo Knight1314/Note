@@ -10,5 +10,13 @@
   git branch -D <branch_name>
   ```
 
-- 
+- 删除远程分支的某个文件夹
+
+  ```shell
+  git rm -r --cached directory
+  git commit -m""
+  git push
+  ```
+
+  
 
