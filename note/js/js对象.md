@@ -63,3 +63,17 @@ Object.defineProperties(obj,{
 delete obj.property;
 ```
 
+
+
+
+
+
+
+### 工作环境搭建
+
+- 安装brew
+
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
