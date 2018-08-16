@@ -13,4 +13,5 @@
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.awt.Stroke"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="org.apache.kafka.clients.producer.Callback"/>
 </qualifiedTypeNameHistroy>

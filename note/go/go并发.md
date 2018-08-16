@@ -1,0 +1,1 @@
+- 主函数返回时，所有的goroutine都会被直接打断，程序退出。除了从主函数退出或者直接终止程序之外，没有其它的编程方法能够让一个goroutine来打断另一个的执行，但是可以通过goroutine之间的通信来让一个goroutine请求其它的goroutine，并被请求的goroutine自行结束执行。

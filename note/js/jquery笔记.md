@@ -44,3 +44,7 @@ $("[attr_name1][attr_name2]")
 $(element).css("key","val")
 ```
 
+```javascript
+$("input[name='need_violation_deposit']:checked").val()	//获取单选按钮的值
+```
+
