@@ -1,3 +1,27 @@
+#### 基本数据类型
+
+- Boolean
+
+- null
+
+- undefined
+
+- String
+
+- Symbol
+
+- Number
+
+  ```javascript
+  "32" - 2; //30
+  "32" + 2; "322"
+  
+  parseInt()
+  parseFloat()
+  ```
+
+  
+
 #### 数组
 
 数组的定义
