@@ -60,5 +60,18 @@
   git log --pretty=oneline --abbrev-commit --graph --first-parent  [上次tag]..
   ```
 
+- 删除git历史，保留最新版本
+
+- ```shell
+  git checkout --orphan lastest_branch 
+  
+  git add -A 
+  git commit -m "message" 
+  
+  git branch -D master 
+  git branch -m master 
+  git push -f origin master 
+  ```
+
 - 
 
